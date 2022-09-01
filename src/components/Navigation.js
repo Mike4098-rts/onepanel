@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import TokenContext from "../contexts/Tokencontext";
 import { motion } from "framer-motion";
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   console.log(isOpen);
   function openHandler() {
     setIsOpen(!isOpen);
