@@ -3,9 +3,9 @@ import { Outlet } from "react-router-dom";
 import Status from "./Status";
 const Layout = () => {
   return (
-    <div>
+    <div className="xl:flex">
       <Navigation />
-      <main className="relative">
+      <main className="">
         <Outlet />
       </main>
       <Status />

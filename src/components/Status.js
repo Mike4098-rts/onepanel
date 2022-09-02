@@ -38,7 +38,7 @@ const Status = () => {
   };
   const [isOnline, setIsOnline] = useState(true);
   return (
-    <div className="bg-status bottom-0 absolute">
+    <footer className="bg-status bottom-0 absolute w-screen ">
       <h1 className="flex items-center">
         Server status
         <div
@@ -47,20 +47,26 @@ const Status = () => {
           }`}
         ></div>
       </h1>
-      <ul className="grid grid-cols-3">
-        <li>API response time: 23ms</li>
-        <li>Active Orders: 50</li>
-        <li>
-          <Radar height="200" width="200" data={data} />
-        </li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
+      <div className="flex xl:gap-96">
+        <ul className="flex flex-col">
+          <li>API response time: 23ms</li>
+          <li>Active Orders: 50</li>
+          <li>Active Support: 124</li>
+          <li>Pending: 20 </li>
+        </ul>
+        <ul className="flex flex-col">
+          <li>Problem with orders</li>
+          <li>Pending tickets: 3</li>
+          <li>Bugs found: 11</li>
+          <li>Active users: 23.349</li>
+        </ul>
+        <ul>
+          <li>
+            <Radar height="100" width="100" data={data} />
+          </li>
+        </ul>
+      </div>
+    </footer>
   );
 };
 

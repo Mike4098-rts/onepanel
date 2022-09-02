@@ -35,7 +35,7 @@ const Navigation = () => {
 
   return (
     <div>
-      <div className="xl:hidden">
+      <div>
         {isOpen && (
           <motion.ul
             variants={dropIn}
@@ -90,11 +90,11 @@ const Navigation = () => {
 
         <button
           onClick={openHandler}
-          className={`text-black bg-background rounded-tr-3xl rounded-br-3xl top-10 absolute z-10 ${
+          className={`text-black bg-background  rounded-tr-3xl rounded-br-3xl top-10 absolute z-10 ${
             isOpen ? "rotate-180 top-10" : ""
           }`}
         >
-          <FeatherIcon icon="arrow-right" size="40" />
+          <FeatherIcon icon="arrow-right" size={isOpen ? "40" : "30"} />
         </button>
       </div>
     </div>
