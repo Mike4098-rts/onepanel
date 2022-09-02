@@ -5,7 +5,7 @@ import { useState } from "react";
 import Logs from "./pages/Logs";
 import Layout from "./components/Layout";
 import Stats from "./pages/Stats";
-import Catalog from "./pages/catalog";
+import Catalog from "./pages/Catalog";
 import Users from "./pages/Users";
 
 function App() {

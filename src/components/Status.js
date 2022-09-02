@@ -36,9 +36,9 @@ const Status = () => {
       },
     ],
   };
-  const [isOnline, setIsOnline] = useState(true);
+  const [isOnline] = useState(true);
   return (
-    <footer className="bg-status bottom-0 absolute w-screen ">
+    <footer className="bg-status bottom-0 sticky w-screen ">
       <h1 className="flex items-center">
         Server status
         <div

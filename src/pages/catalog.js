@@ -1,5 +1,10 @@
+import Cards from "../components/Cards";
 const Catalog = () => {
-    return ( <>catalog</> );
-}
- 
+  return (
+    <div>
+      <Cards />
+    </div>
+  );
+};
+
 export default Catalog;
