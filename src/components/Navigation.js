@@ -44,7 +44,7 @@ const Navigation = () => {
             exit="exit"
             className="bg-background flex flex-col items-center w-48 rounded-br-xl rounded-tr-xl"
           >
-            <h1 className="font-bold">Guva Enterprise</h1>
+            <h1 className="font-bold">Guava Enterprise</h1>
 
             <li className="font-semibold">
               <Link
