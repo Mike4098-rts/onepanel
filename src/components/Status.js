@@ -17,7 +17,7 @@ ChartJS.register(
   Tooltip,
   Legend
 );
-const Status = () => {
+const Status = ({responsive}) => {
   const data = {
     labels: [
       "Active Orders",
@@ -38,7 +38,7 @@ const Status = () => {
   };
   const [isOnline] = useState(true);
   return (
-    <footer className="bg-status bottom-0 sticky w-screen ">
+    <footer className={`bg-status bottom-0 sticky ${responsive ? "sticky" : "absolute" } w-screen`}>
       <h1 className="flex items-center">
         Server status
         <div

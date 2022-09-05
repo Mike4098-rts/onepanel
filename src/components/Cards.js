@@ -1,4 +1,3 @@
-import FeatherIcon from "feather-icons-react";
 const Cards = () => {
   const data = [
     {
@@ -57,7 +56,7 @@ const Cards = () => {
         <div className=" group bg-background" key={info.id}>
             <img className="w-64 h-64" src={info.image} alt="" />
           <div className="opacity-0 h-0 group-hover:opacity-100 group-hover:h-full">
-          <FeatherIcon icon="more-horizontal"/>
+          ...
           </div>
           {console.log(info.image)}
           <h1>{info.name}</h1>
