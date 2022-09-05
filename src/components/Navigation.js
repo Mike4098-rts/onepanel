@@ -5,7 +5,6 @@ import TokenContext from "../contexts/Tokencontext";
 import { motion } from "framer-motion";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(true);
-  console.log(isOpen);
   function openHandler() {
     setIsOpen(!isOpen);
   }
@@ -91,7 +90,7 @@ const Navigation = () => {
         <button
           onClick={openHandler}
           className={`text-black bg-background  rounded-tr-3xl rounded-br-3xl top-10 absolute z-10 ${
-            isOpen ? "rotate-180 top-10" : ""
+            isOpen ? "rotate-180 top-10 bg-none" : ""
           }`}
         >
           <FeatherIcon icon="arrow-right" size={isOpen ? "40" : "30"} />

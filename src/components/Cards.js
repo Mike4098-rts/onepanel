@@ -58,7 +58,6 @@ const Cards = () => {
           <div className="opacity-0 h-0 group-hover:opacity-100 group-hover:h-full">
           ...
           </div>
-          {console.log(info.image)}
           <h1>{info.name}</h1>
           <h3>{info.brand}</h3>
           <span>kr: {info.price}</span>
